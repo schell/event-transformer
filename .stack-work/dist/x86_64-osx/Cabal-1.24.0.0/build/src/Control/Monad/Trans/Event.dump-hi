@@ -1,0 +1,121 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-10 21:58:33.982611 UTC
+
+interface event-transformer-0.1.0.0-36yCWRF70dd4KMc0ABv7HN:Control.Monad.Trans.Event 8001
+  interface hash: fb1f176f8cb3b7224d1de4ae1ab59c22
+  ABI hash: fe109fa671312e400e55aea161a89ae5
+  export-list hash: b3483d01709248970b9d78f444e6d004
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0da9a6d1b28661cfc5130a575ecc6d86
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Control.Monad.Trans.Event.done
+  Control.Monad.Trans.Event.next
+  Control.Monad.Trans.Event.wait
+  Control.Monad.Trans.Event.withAny
+  Control.Monad.Trans.Event.withEither
+  Control.Monad.Trans.Event.EventT{Control.Monad.Trans.Event.EventT runEventT}
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Control.Monad.IO.Class d702028d883e700bd7066b031147030d
+import  -/  base-4.9.0.0:Data.Either bd9f099b82d4ed2d98c56d7144ac6957
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:Data.Traversable 7ce5b7ee67475ac3d03ae825b86efd9f
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class dbb3e20cde5546fe0eb9f9b8c0fb8ef4
+60ab83de10c2ca54a1234d3e6fd8f8e1
+  $fApplicativeEventT ::
+    GHC.Base.Monad m =>
+    GHC.Base.Applicative (Control.Monad.Trans.Event.EventT m)
+  DFunId
+60ab83de10c2ca54a1234d3e6fd8f8e1
+  $fFunctorEventT ::
+    GHC.Base.Monad m =>
+    GHC.Base.Functor (Control.Monad.Trans.Event.EventT m)
+  DFunId
+60ab83de10c2ca54a1234d3e6fd8f8e1
+  $fMonadEventT ::
+    GHC.Base.Monad m =>
+    GHC.Base.Monad (Control.Monad.Trans.Event.EventT m)
+  DFunId
+60ab83de10c2ca54a1234d3e6fd8f8e1
+  $fMonadIOEventT ::
+    Control.Monad.IO.Class.MonadIO m =>
+    Control.Monad.IO.Class.MonadIO (Control.Monad.Trans.Event.EventT m)
+  DFunId
+60ab83de10c2ca54a1234d3e6fd8f8e1
+  $fMonadTransEventT ::
+    Control.Monad.Trans.Class.MonadTrans
+      Control.Monad.Trans.Event.EventT
+  DFunId
+66b86e579478d06c617c67f20aa4610d
+  $tc'EventT :: GHC.Types.TyCon
+e39638ffa627d4c145930ee898475fcc
+  $tcEventT :: GHC.Types.TyCon
+c9da54870a68603baaeb9684be8cc287
+  $trModule :: GHC.Types.Module
+60ab83de10c2ca54a1234d3e6fd8f8e1
+  type role EventT nominal nominal
+  newtype EventT (m :: * -> *) b
+    = EventT {runEventT :: m (Data.Either.Either
+                                b (Control.Monad.Trans.Event.EventT m b))}
+    RecFlag: Recursive
+c8b2b0461c4b1907cc1958d9293f617a
+  done ::
+    GHC.Base.Monad m => a -> Control.Monad.Trans.Event.EventT m a
+acdfe7529a4db90f42ca04fb8be9fafa
+  next ::
+    GHC.Base.Monad m =>
+    Control.Monad.Trans.Event.EventT m a
+    -> Control.Monad.Trans.Event.EventT m a
+741d4da4167b0a1fe1dd7d4b408812a9
+  runEventT ::
+    Control.Monad.Trans.Event.EventT m b
+    -> m (Data.Either.Either b (Control.Monad.Trans.Event.EventT m b))
+  RecSel Left Control.Monad.Trans.Event.EventT
+fa2e786d7d92e7930ab96c3d509dd8ed
+  wait ::
+    GHC.Base.Monad m =>
+    GHC.Types.Int -> Control.Monad.Trans.Event.EventT m ()
+bee27bc46c5f640ffc2e3c6b6d2732d3
+  withAny ::
+    GHC.Base.Monad m =>
+    [Control.Monad.Trans.Event.EventT m a]
+    -> Control.Monad.Trans.Event.EventT m a
+364e3c8c3229455dc3ca65a4f7ea0949
+  withEither ::
+    GHC.Base.Monad m =>
+    Control.Monad.Trans.Event.EventT m a
+    -> Control.Monad.Trans.Event.EventT m b
+    -> Control.Monad.Trans.Event.EventT m (Data.Either.Either a b)
+instance [safe] GHC.Base.Applicative [Control.Monad.Trans.Event.EventT]
+  = Control.Monad.Trans.Event.$fApplicativeEventT
+instance [safe] GHC.Base.Functor [Control.Monad.Trans.Event.EventT]
+  = Control.Monad.Trans.Event.$fFunctorEventT
+instance [safe] GHC.Base.Monad [Control.Monad.Trans.Event.EventT]
+  = Control.Monad.Trans.Event.$fMonadEventT
+instance [safe] Control.Monad.IO.Class.MonadIO [Control.Monad.Trans.Event.EventT]
+  = Control.Monad.Trans.Event.$fMonadIOEventT
+instance [safe] Control.Monad.Trans.Class.MonadTrans [Control.Monad.Trans.Event.EventT]
+  = Control.Monad.Trans.Event.$fMonadTransEventT
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

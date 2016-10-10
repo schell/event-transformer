@@ -1,0 +1,56 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-10 22:29:49.2208 UTC
+
+interface main@main:Main 8001
+  interface hash: 50031a49f7ad86ef9b57fc4212700d5c
+  ABI hash: cd6d64186f330670e84e800e475103ca
+  export-list hash: c34c3c2435b70a08d9b6535debf07f9f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 53de5559aea9ebcaaf9a88378d92130d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.loop
+  Main.main
+  Main.mainEvent
+module dependencies:
+package dependencies: base-4.9.0.0*
+                      event-transformer-0.1.0.0@event-transformer-0.1.0.0-36yCWRF70dd4KMc0ABv7HN
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Control.Monad.IO.Class d702028d883e700bd7066b031147030d
+import  -/  base-4.9.0.0:Data.Either bd9f099b82d4ed2d98c56d7144ac6957
+import  -/  base-4.9.0.0:Data.Function 0e2e66c2e87e48a960f18fa702dab405
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.IO ad985d7a3fc986e9b9c610fb344d9106
+import  -/  event-transformer-0.1.0.0@event-transformer-0.1.0.0-36yCWRF70dd4KMc0ABv7HN:Control.Monad.Trans.Event fe109fa671312e400e55aea161a89ae5
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+83f529351410271e83fed952c86159e1
+  $trModule :: GHC.Types.Module
+57c23ee6f5a56315858827e0b54b502c
+  loop ::
+    Control.Monad.Trans.Event.EventT GHC.Types.IO () -> GHC.Types.IO ()
+0d166822e21f7182ece26123ea2cf341
+  main :: GHC.Types.IO ()
+365b88e94eb9035d9540e97cda201108
+  mainEvent ::
+    Control.Monad.IO.Class.MonadIO m =>
+    Control.Monad.Trans.Event.EventT m ()
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
